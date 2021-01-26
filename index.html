@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QA TURBO</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <h1>Practice Page</h1>
+        <h2>QA Turbo School</h2>
+        <hr>
+
+        
+        <!--PASSWORD -->
+        <h3 class="heading">Text fields</h3>
+        <div class="text">
+            
+            <form class="usernamepass">
+              <label for="username">Username:</label><br>
+              <input type="text" id="username" name="username"><br>
+              <label for="pwd">Password:</label><br>
+              <input type="password" id="pwd" name="pwd"><br><br>
+                <input type="submit" value="Send">
+            </form>
+
+            <form action="/action_page.php" class="firstlast">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" ><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" ><br><br>
+              <input type="submit" value="Submit">
+              <input type="reset">
+            </form>
+        </div><hr>
+        
+        <h3 class="heading">Select items</h3>
+        
+        <div class="radio_check">
+            <form class="radio">
+                <p><b>Radio button</b> - select only one</p>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+            </form>
+
+            <form class="checkbox">
+                <p> <b>Checkbox</b> - select any or all</p>
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> I have a bike</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> I have a car</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> I have a boat</label>
+            </form>
+        </div><hr>
+
+         <h3 class="heading">Date type</h3>
+        
+       <div class="b_days">
+    
+            <form class="bday">
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday">
+            </form><br>
+
+             <form class="bday">
+              <label for="bdaymonth">Birthday (month and year):</label>
+              <input type="month" id="bdaymonth" name="bdaymonth">
+            </form>
+
+            <form class="bday">
+              <label for="birthdaytime">Birthday (date and time):</label>
+              <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </form>
+
+            <form class="bday">
+              <label for="datemax">Enter a date before 1980-01-01:</label>
+              <input type="date" id="datemax" name="datemax" max="1979-12-31">
+           </form>
+            <form class="bday">
+              <label for="datemin">Enter a date after 2000-01-01:</label>
+              <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            </form>
+        </div>  <hr>
+        
+        <h3 class="heading">Range input</h3>
+        
+        <div class="selection">
+            <form class="quantity">
+              <label for="quantity">Quantity (between 1 and 5):</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </form>
+            <form class="color">
+              <label for="favcolor">Select your favorite color:</label>
+              <input type="color" id="favcolor" name="favcolor">
+            </form>
+        </div><hr>
+        <h3 class="heading">Buttons</h3>
+        
+        <div class="buttons">
+            <form class="file">
+              <label for="myfile">Select a file:</label>
+              <input type="file" id="myfile" name="myfile">
+            </form>
+            <form class="file">
+             <input class="buttonClick" type="button" onclick="alert('Hello World!')" value="Click Me!">
+            </form>
+         </div>
+        
+           
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
+
